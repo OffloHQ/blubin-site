@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The BluBin Blog — Field notes for home resellers</title>
+  <meta name="description" content="Reseller inventory tips, storage workflows, and practical guides to stop losing sold items." />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+
+  <!-- Shared site styles + blog-only overrides -->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/blog/blog.css" />
+</head>
+
+<body>
+
+  <!-- BLOG HEADER -->
+<header class="blog-header">
+  <div class="container blog-header-inner">
+    <a class="blog-brand" href="/blog/">
+      <img class="blog-logo" src="/favicon/favicon.svg" alt="BluBin" />
+      <span>The BluBin Blog</span>
+    </a>
+
+    <nav class="blog-nav" aria-label="Blog">
+      <a class="blog-link" href="/">About BluBin</a>
+
+      <!-- Search toggle -->
+      <button class="search-toggle" type="button" aria-label="Search" aria-expanded="false" aria-controls="blogSearch">
+        <!-- magnifying glass icon (SVG) -->
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+          <path d="M21 21l-4.35-4.35m1.35-5.65a7 7 0 11-14 0 7 7 0 0114 0z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <!-- Collapsible search -->
+      <form id="blogSearch" class="blog-search-inline" action="/blog/" method="get" role="search">
+        <label class="sr-only" for="q">Search articles</label>
+        <input id="q" name="q" type="search" placeholder="Search articles" />
+      </form>
+    </nav>
+  </div>
+</header>
+
+  <main id="content">
+
+    <!-- HERO (old polish + soft glow) -->
+    <section class="blog-hero">
+  <div class="container">
+    <div class="blog-hero-inner">
+      <h1 class="blog-h1">The BluBin Blog</h1>
+      <p class="blog-sub">
+        Notes from the field while building BluBin — storage systems, reseller workflows,
+        and the small fixes that save you when something sells.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- CHIPS (between hero and top row) -->
+    <section class="blog-chips">
+      <div class="container">
+        <div class="chip-row" aria-label="Categories">
+          <a class="chip is-active" href="/blog/">All</a>
+          <a class="chip" href="/blog/?cat=inventory">Inventory Systems</a>
+          <a class="chip" href="/blog/?cat=storage">Storage Ideas</a>
+          <a class="chip" href="/blog/?cat=shipping">Shipping</a>
+          <a class="chip" href="/blog/?cat=resellerlife">Reseller Life</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP ROW: FLAT ABOUT + POPPING REEL -->
+    <section class="blog-top">
+      <div class="container blog-top-grid">
+
+        <!-- ABOUT (flat) -->
+        <aside class="about-card" aria-label="About the author">
+          <div class="about-title">About me</div>
+
+          <div class="about-row">
+            <div class="avatar" aria-hidden="true">AT</div>
+            <div>
+              <div class="about-name">Ashley T.</div>
+              <div class="about-role">Thrifter • Reseller • Mom </div>
+            </div>
+          </div>
+
+          <p class="about-text">
+            I’ve been a reseller for years — Goodwill hunts, flea markets, and building simple systems
+            so inventory doesn’t take over the house.
+          </p>
+
+          <p class="about-text">
+            This blog is growing in public as BluBin grows.
+          </p>
+
+          
+        </aside>
+
+        <!-- REEL (popping panel) -->
+        <div class="reel-col" aria-label="Start here">
+          <div class="reel-head">
+            <div>
+              <div class="reel-title">Start here</div>
+              <div class="reel-subtitle">A few quick reads while the blog is still young.</div>
+            </div>
+
+            <!-- mover controls -->
+            <div class="reel-controls" aria-label="Reel controls">
+              <button class="reel-btn" type="button" aria-label="Scroll left" data-reel-left>←</button>
+              <button class="reel-btn" type="button" aria-label="Scroll right" data-reel-right>→</button>
+            </div>
+          </div>
+
+          <div class="reel-row" id="reelRow" tabindex="0" aria-label="Pinned reel posts">
+
+  <a class="reel-card" href="/blog/why-blubin-was-built.html">
+  <div class="reel-thumb">
+    <img src="/blog/img/blubuilt.png" alt="Why BluBin was built" />
+  </div>
+  <div class="reel-caption">
+    <div class="reel-card-title">Why BluBin Was Built</div>
+    <div class="reel-card-meta">Reseller Life • 4 min read</div>
+  </div>
+</a>
+
+<a class="reel-card" href="/blog/the-quiet-cost-of-selling-online-boxes.html">
+  <div class="reel-thumb">
+    <img src="/blog/img/costbox.png" alt="Stack of shipping boxes used by online resellers" />
+  </div>
+  <div class="reel-caption">
+    <div class="reel-card-title">The Quiet Cost of Selling Online: Boxes</div>
+    <div class="reel-card-meta">Reseller Life • 4 min read</div>
+  </div>
+</a>
+
+<a class="reel-card" href="/blog/store-reseller-inventory-home.html">
+  <div class="reel-thumb">
+    <img src="/blog/img/Checklist.png" alt="Reseller Home Checklist" />
+  </div>
+  <div class="reel-caption">
+    <div class="reel-card-title">How to Store Reseller Inventory at Home</div>
+    <div class="reel-card-meta">Reseller Life • 3 min read</div>
+  </div>
+</a>
+  
+
+            <!-- optional extra placeholder card so scroll is obvious -->
+            <div class="reel-card reel-placeholder">
+  <div class="reel-placeholder-inner">
+    <div class="placeholder-line">More</div>
+    <div class="placeholder-line">Field Notes</div>
+    <div class="placeholder-line muted">Soon</div>
+  </div>
+</div>
+
+          <div class="reel-foot">
+            <span class="reel-hint">Tip: use arrows or trackpad horizontal scroll</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEED INTRO -->
+    <section class="feed-intro">
+      <div class="container">
+        <p class="feed-kicker">Field notes from a home reseller — posted as the system grows.</p>
+      </div>
+
+      
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="blog-footer">
+      <div class="container blog-footer-inner">
+        <div class="muted">© 2026 Barder Works</div>
+        <div class="footer-links">
+          <a href="/blog/">Blog</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    (function(){
+      const row = document.getElementById('reelRow');
+      if(!row) return;
+
+      const leftBtn = document.querySelector('[data-reel-left]');
+      const rightBtn = document.querySelector('[data-reel-right]');
+
+      const scrollByAmount = () => Math.max(260, Math.floor(row.clientWidth * 0.75));
+
+      const scrollLeft = () => row.scrollBy({ left: -scrollByAmount(), behavior: 'smooth' });
+      const scrollRight = () => row.scrollBy({ left: scrollByAmount(), behavior: 'smooth' });
+
+      leftBtn && leftBtn.addEventListener('click', scrollLeft);
+      rightBtn && rightBtn.addEventListener('click', scrollRight);
+
+      // keyboard support when reel focused
+      row.addEventListener('keydown', (e) => {
+        if(e.key === 'ArrowLeft') { e.preventDefault(); scrollLeft(); }
+        if(e.key === 'ArrowRight') { e.preventDefault(); scrollRight(); }
+      });
+    })();
+  </script>
+  <script>
+  (function(){
+    const nav = document.querySelector('.blog-nav');
+    const btn = document.querySelector('.search-toggle');
+    const form = document.getElementById('blogSearch');
+    const input = document.getElementById('q');
+
+    if(!nav || !btn || !form || !input) return;
+
+    function openSearch(){
+      nav.classList.add('is-search-open');
+      btn.setAttribute('aria-expanded', 'true');
+      setTimeout(() => input.focus(), 0);
+    }
+
+    function closeSearch(){
+      nav.classList.remove('is-search-open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+
+    btn.addEventListener('click', () => {
+      const isOpen = nav.classList.contains('is-search-open');
+      isOpen ? closeSearch() : openSearch();
+    });
+
+    // Esc closes
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape') closeSearch();
+    });
+
+    // Click outside closes (optional but nice)
+    document.addEventListener('click', (e) => {
+      if(!nav.contains(e.target)) closeSearch();
+    });
+  })();
+</script>
+</body>
+</html>

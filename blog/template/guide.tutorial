@@ -1,0 +1,61 @@
+
+---notes---
+Title
+Short intro
+
+Section
+Section
+Section
+
+Tip box / note
+
+Section
+
+Related articles
+CTA band
+------
+
+<article class="post-body container">
+
+  <div class="post-top">
+    <a class="post-back" href="/blog/">← Back to Blog</a>
+
+    <div class="post-meta-row">
+      <span class="post-cat">Inventory Systems</span>
+      <span class="dot">•</span>
+      <span>6 min read</span>
+    </div>
+
+    <h1 class="post-h1">How to Store Reseller Inventory at Home</h1>
+
+    <p class="post-lead">
+      Closets, totes, shelves, spare rooms — home resellers store inventory everywhere.
+      Here's a simple system that prevents sold items from disappearing.
+    </p>
+  </div>
+
+  <hr class="post-rule">
+
+  <h2>Start with one rule</h2>
+  <p>Every item needs one location.</p>
+
+  <h2>Use real-life location names</h2>
+  <ul>
+    <li>Closet shelf 2</li>
+    <li>Blue tote (top)</li>
+    <li>Spare room rack</li>
+  </ul>
+
+  <div class="note-card post-note">
+    <div class="note-title">Quick note</div>
+    <p class="note-text">
+      You don't need SKUs or warehouse systems.
+      The goal is simply to know where the item is.
+    </p>
+  </div>
+
+</article>
+
+<div class="post-author">
+  Written by BluBin • Updated 2026
+</div>
