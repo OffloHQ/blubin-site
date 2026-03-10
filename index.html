@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +7,9 @@
   <meta name="description" content="You shouldn’t have to open six bins to ship one item. BluBin groups sold items by location so home resellers can pull fast and ship on time." />
 
   <meta property="og:title" content="BluBin – Stop digging for sold items" />
-  <meta property="og:description" content="It sold. Now you know exactly where it is. Built for home resellers — closets, totes, shelves, and spare rooms." />
+  <meta property="og:description" content="BluBin helps home resellers pull sold items fast by showing exactly where inventory lives." />
   <meta property="og:type" content="website" />
 
-  <!-- Favicons -->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
@@ -27,86 +25,104 @@
         <img class="brand-logo" src="/favicon/favicon.svg" alt="BluBin logo" />
         <span class="brand-name">BluBin</span>
       </a>
-      <nav class="nav">
+
+      <nav class="nav nav-desktop" aria-label="Primary">
         <a href="/blog/">Blog</a>
-        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
         <a class="pill" href="#get">Get it</a>
       </nav>
+
+      <button class="menu-btn" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" aria-label="Mobile navigation">
+      <div class="container mobile-menu-inner">
+        <a href="/blog/">Blog</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#how">How it works</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a class="pill mobile-menu-cta" href="#get">Get BluBin</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero" id="get">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">For home resellers (not warehouses)</p>
+    <!-- HERO DESKTOP -->
+<section class="hero hero-desktop" id="get">
+  <div class="container hero-grid">
 
-          <h1>
-            Stop digging through bins
-          <span class="break">when something sells.</span>
-          </h1>
+    <div class="hero-copy">
+      <p class="eyebrow">For home resellers (not warehouses)</p>
 
-          <p class="hero-sub">
-            BluBin tells you <span class="accent">exactly</span> where it is.
-          </p>
+      <h1>
+        Stop digging through bins
+        <span class="break">when something sells.</span>
+      </h1>
 
-          <p class="support">
-            Built for home resellers storing inventory in closets, totes, garages, and storage units.
-          </p>
+      <p class="hero-sub">
+        BluBin tells you <span class="accent">exactly</span> where it is.
+      </p>
 
-          <div class="cta-row">
-            <a class="btn primary" href="#">Download BluBin</a>
-            <a class="btn secondary" href="#how">See how it works</a>
-          </div>
-        </div>
+      <p class="support">
+        Built for home resellers storing inventory in closets, totes, garages, and storage units.
+      </p>
 
-        <div class="hero-media">
-          <img class="phone-img" src="images/mockwhole.png" alt="BluBin Pull Queue on iPhone" />
-          <p class="hero-caption">Pull Queue groups sold items by location — so you pull fast and ship on time.</p>
-        </div>
+      <div class="cta-row">
+        <a class="btn primary" href="#">Download BluBin</a>
+        <a class="btn secondary" href="#how">See how it works</a>
       </div>
-    </section>
+    </div>
 
-    <!-- “BarderWorks-style” FEATURE SECTION -->
-    <section class="section">
-      <div class="container">
-        <div class="center-head">
-          <h2>Simple inventory for resellers.</h2>
-          <p class="lead center-lead">
-            Whether you sell occasionally or ship every week, BluBin keeps your inventory simple and findable.
-            Totes, trunks, closets, shelves, storage units, or a spare room — we don’t judge.
-            Finding it should be as simple as putting it away.
-          </p>
-        </div>
+    <div class="hero-media">
+      <img class="phone-img" src="images/mockwhole.png" alt="BluBin Pull Queue on iPhone" />
+      <p class="hero-caption">
+        Pull Queue groups sold items by location — so you pull fast and ship on time.
+      </p>
+    </div>
 
-        <div class="tri">
-          <div class="tri-col">
-            <div class="tri-icon">📦</div>
-            <h3>Pull without panic</h3>
-            <p>No digging. No guessing. Just go to the right spot.</p>
-          </div>
+  </div>
+</section>
 
-          <div class="tri-divider"></div>
 
-          <div class="tri-col">
-            <div class="tri-icon">🧼</div>
-            <h3>Lightweight on purpose</h3>
-            <p>No SKUs. No warehouse software. No spreadsheet juggling.</p>
-          </div>
+<!-- HERO MOBILE -->
+<section class="hero hero-mobile">
 
-          <div class="tri-divider"></div>
+  <div class="container hero-mobile-inner">
 
-          <div class="tri-col">
-            <div class="tri-icon">⚡️</div>
-            <h3>Built for your flow</h3>
-            <p>Occasional seller or weekly shipper — keep it simple and findable.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <h1 class="mobile-headline">
+      Stop Digging.
+      <span>Pull Sold Items Fast.</span>
+    </h1>
 
-    <!-- HOW + WHO FLOW -->
+    <p class="hero-sub">
+      BluBin tells you <span class="accent">exactly</span> where it is.
+    </p>
+
+    <p class="support">
+      Built for home resellers storing inventory in closets, totes, garages, and storage units.
+    </p>
+
+    <div class="cta-row mobile-cta">
+      <a class="btn primary" href="#">Download BluBin</a>
+      <a class="btn secondary" href="#how">See how it works</a>
+    </div>
+
+    <div class="hero-media mobile-media">
+      <img class="phone-img" src="images/mockwhole.png" alt="BluBin Pull Queue on iPhone" />
+      <p class="hero-caption">
+        Pull Queue groups sold items by location — so you pull fast and ship on time.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
     <section class="section flow-section" id="how">
       <div class="container flow-grid">
 
@@ -129,16 +145,16 @@
         </div>
 
         <div class="flow-video">
-  <div class="iphone">
-    <div class="iphone-screen">
-      <video class="demo-video" autoplay muted loop playsinline>
-        <source src="videos/blubin-demo.mp4" type="video/mp4" />
-      </video>
-    </div>
-  </div>
+          <div class="iphone">
+            <div class="iphone-screen">
+              <video class="demo-video" autoplay muted loop playsinline>
+                <source src="videos/blubin-demo.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
 
-  <div class="caption">Finding should be as easy as putting it away.</div>
-</div>
+          <div class="caption">Finding should be as easy as putting it away.</div>
+        </div>
 
         <div class="who-illustration">
           <img src="images/closetdrawing.png" alt="Closet inventory illustration">
@@ -150,8 +166,8 @@
             For home resellers who want to know where their inventory lives at the moment of sale.
           </p>
           <ul class="bullets">
-            <li>Home resellers on Poshmark, eBay, Mercari</li>
-            <li>Closet / tote / shelf inventory setups</li>
+            <li>Home resellers on Poshmark, eBay, and Mercari</li>
+            <li>Closet, tote, and shelf inventory setups</li>
             <li>Anyone tired of digging when something sells</li>
           </ul>
 
@@ -163,80 +179,70 @@
       </div>
     </section>
 
-    <!-- PRICING -->
-    <!-- PRICING -->
-<section class="section alt" id="pricing">
-  <div class="container">
-    <h2 class="pricing-title">Pricing</h2>
+    <section class="section alt" id="pricing">
+      <div class="container">
+        <h2 class="pricing-title">Pricing</h2>
 
-    <div class="two-col">
+        <div class="two-col">
+          <div class="card">
+            <h3>Free</h3>
 
-      <div class="card">
-  <h3>Free</h3>
+            <ul class="bullets">
+              <li>1 bin</li>
+              <li>10 active items</li>
+              <li>Unlimited archive</li>
+              <li>Full Pull Queue</li>
+            </ul>
 
-  <ul class="bullets">
-    <li>1 bin</li>
-    <li>10 active items</li>
-    <li>Unlimited archive</li>
-    <li>Full Pull Queue</li>
-  </ul>
+            <p class="muted small">Perfect for getting started.</p>
+            <p class="price">$0</p>
+          </div>
 
-  <p class="muted small">Perfect for getting started.</p>
+          <div class="card pro-card">
+            <h3>Pro — Early Supporter Pricing</h3>
 
-  <p class="price">$0</p>
-</div>
+            <ul class="bullets">
+              <li>Unlimited bins</li>
+              <li>Unlimited items</li>
+            </ul>
 
+            <div class="price-block">
+              <div class="price-main">$4.99 <span>/month</span></div>
+              <div class="price-year">or $45/year • save $15</div>
+            </div>
 
-<div class="card pro-card">
-  <h3>Pro — Early Supporter Pricing</h3>
-
-  <ul class="bullets">
-    <li>Unlimited bins</li>
-    <li>Unlimited items</li>
-  </ul>
-
-  <div class="price-block">
-    <div class="price-main">$4.99 <span>/month</span></div>
-    <div class="price-year">or $45/year • save $15</div>
-  </div>
-
-  <p class="muted small">
-    Early supporters lock in this price while subscribed.
-  </p>
-</div>
-
-    </div>
-  </div>
-</section>
-
-    <!-- CLEAN BRAND BAND (matches site) -->
-   <section class="section brand-band">
-  <div class="container">
-    <div class="band">
-
-      <div class="band-left">
-        <img class="band-logo" src="/favicon/favicon.svg" alt="BluBin logo" />
-      </div>
-
-      <div class="band-copy">
-        <div class="band-line">
-          One sale. <span class="dot">•</span> One location. <span class="dot">•</span> No digging.
-        </div>
-
-        <div class="band-sub">
-          When an item sells, BluBin tells you exactly where it is.
+            <p class="muted small">
+              Early supporters lock in this price while subscribed.
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="band-right">
-        <a class="btn primary" href="#">Get BluBin on the App Store</a>
+    <section class="section brand-band">
+      <div class="container">
+        <div class="band">
+          <div class="band-left">
+            <img class="band-logo" src="/favicon/favicon.svg" alt="BluBin logo" />
+          </div>
+
+          <div class="band-copy">
+            <div class="band-line">
+              One sale. <span class="dot">•</span> One location. <span class="dot">•</span> No digging.
+            </div>
+
+            <div class="band-sub">
+              When an item sells, BluBin tells you exactly where it is.
+            </div>
+          </div>
+
+          <div class="band-right">
+            <a class="btn primary" href="#">Get BluBin on the App Store</a>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-    <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-inner">
         <div>
