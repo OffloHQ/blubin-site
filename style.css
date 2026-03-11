@@ -648,9 +648,39 @@ h1{
     margin-left: auto;
   }
 
-  .mobile-menu{
-    display: block;
+  .break{
+  display: block;
+}
+
+.mobile-menu{
+  display: none;
+  border-top: 1px solid rgba(15,23,42,.06);
+  background: rgba(255,255,255,.96);
+}
+
+.mobile-menu.open{
+  display: block;
+}
+
+@media (max-width: 900px){
+  .flow-how{
+    margin: 0 auto;
+    text-align: center;
   }
+
+  .flow-how .steps{
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 14px auto 0;
+    max-width: 34ch;
+  }
+
+  .flow-how .step-text{
+    text-align: center;
+  }
+}
+
+ 
 
   .hero{
     padding: 34px 0 24px;
@@ -791,6 +821,22 @@ h1{
   .flow-who h2{
     font-size: 26px;
   }
+
+  .flow-how{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flow-how .steps{
+  padding-left: 0;
+  list-style-position: inside;
+  margin: 16px auto 0;
+  max-width: 34ch;
+}
+
+.flow-how li{
+  text-align: left;
+}
 
   .iphone{
     width: min(220px, 72vw);

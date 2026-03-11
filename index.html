@@ -32,7 +32,7 @@
         <a class="pill" href="#get">Get it</a>
       </nav>
 
-      <button class="menu-btn" type="button" aria-label="Open menu">
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -257,5 +257,17 @@
       </div>
     </footer>
   </main>
+
+  <script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+</script>
 </body>
 </html>
