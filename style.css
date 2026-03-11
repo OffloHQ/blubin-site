@@ -32,7 +32,10 @@ button{
   margin: 0 auto;
 }
 
-/* Topbar */
+/* ---------------------------------
+   TOPBAR
+--------------------------------- */
+
 .topbar{
   position: sticky;
   top: 0;
@@ -77,6 +80,10 @@ button{
   font-weight: 600;
 }
 
+.nav-desktop{
+  margin-left: auto;
+}
+
 .nav .pill,
 .mobile-menu-cta{
   padding: 9px 12px;
@@ -84,10 +91,6 @@ button{
   border-radius: 999px;
   background: white;
   color: var(--text);
-}
-
-.nav-desktop{
-  margin-left: auto;
 }
 
 .menu-btn{
@@ -119,6 +122,10 @@ button{
   background: rgba(255,255,255,.96);
 }
 
+.mobile-menu.open{
+  display: block;
+}
+
 .mobile-menu-inner{
   display: grid;
   gap: 12px;
@@ -137,7 +144,10 @@ button{
   width: fit-content;
 }
 
-/* Hero */
+/* ---------------------------------
+   HERO - DESKTOP BASE
+--------------------------------- */
+
 .hero{
   padding: 72px 0 56px;
 }
@@ -167,6 +177,10 @@ h1{
   font-size: clamp(65px, 4.6vw, 80px);
   line-height: 1.02;
   letter-spacing: -0.02em;
+}
+
+.break{
+  display: block;
 }
 
 .hero-line{
@@ -220,7 +234,6 @@ h1{
   color: var(--text);
 }
 
-/* Hero media */
 .hero-media{
   display: grid;
   justify-items: center;
@@ -243,7 +256,46 @@ h1{
   max-width: 44ch;
 }
 
-/* Sections */
+/* Hero variants */
+.hero-mobile{
+  display: none;
+}
+
+.hero-desktop{
+  display: block;
+}
+
+.hero-mobile-inner{
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.mobile-headline{
+  font-size: clamp(46px, 11vw, 62px);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 0 auto 14px;
+  max-width: 11.5ch;
+  text-align: center;
+}
+
+.mobile-headline span{
+  display: block;
+}
+
+.mobile-cta{
+  justify-content: center;
+}
+
+.mobile-media{
+  margin-top: 18px;
+}
+
+/* ---------------------------------
+   SECTIONS
+--------------------------------- */
+
 .section{
   padding: 42px 0;
 }
@@ -274,7 +326,10 @@ h1{
   margin: 0 auto;
 }
 
-/* 3-col value section */
+/* ---------------------------------
+   TRI SECTION
+--------------------------------- */
+
 .tri{
   margin-top: 26px;
   border-top: 1px solid rgba(15,23,42,.10);
@@ -318,7 +373,10 @@ h1{
   font-size: 14px;
 }
 
-/* How / Flow */
+/* ---------------------------------
+   FLOW / HOW
+--------------------------------- */
+
 .steps{
   margin: 14px 0 0;
   padding-left: 18px;
@@ -442,7 +500,10 @@ h1{
   text-align: center;
 }
 
-/* iPhone frame wrapper */
+/* ---------------------------------
+   IPHONE FRAME
+--------------------------------- */
+
 .iphone{
   width: min(220px, 100%);
   margin: 0 auto;
@@ -485,7 +546,10 @@ h1{
   background: #000;
 }
 
-/* Pricing */
+/* ---------------------------------
+   PRICING
+--------------------------------- */
+
 .pricing-title{
   text-align: center;
   margin-bottom: 32px;
@@ -571,7 +635,10 @@ h1{
   margin-top: 4px;
 }
 
-/* Brand band */
+/* ---------------------------------
+   BRAND BAND
+--------------------------------- */
+
 .brand-band{
   padding-top: 28px;
 }
@@ -609,7 +676,10 @@ h1{
   margin: 0 6px;
 }
 
-/* Footer */
+/* ---------------------------------
+   FOOTER
+--------------------------------- */
+
 .footer{
   padding: 22px 0;
   border-top: 1px solid var(--line);
@@ -628,7 +698,11 @@ h1{
   gap: 14px;
 }
 
-/* Tablet / mobile */
+/* =================================
+   MOBILE / TABLET OVERRIDES
+   Keep all mobile work down here
+================================= */
+
 @media (max-width: 900px){
   .container{
     width: calc(100% - 28px);
@@ -648,107 +722,70 @@ h1{
     margin-left: auto;
   }
 
-  .break{
-  display: block;
-}
+  .hero-desktop{
+    display: none;
+  }
 
-.mobile-menu{
-  display: none;
-  border-top: 1px solid rgba(15,23,42,.06);
-  background: rgba(255,255,255,.96);
-}
+  .hero-mobile{
+    display: block;
+    padding: 40px 0 30px;
+  }
 
-.mobile-menu.open{
-  display: block;
-}
-
-@media (max-width: 900px){
-  .flow-how{
+  .hero-mobile-inner{
+    max-width: 560px;
+    text-align: center;
     margin: 0 auto;
+  }
+
+  .mobile-headline{
+    font-size: clamp(46px, 11vw, 62px);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 auto 14px;
+    max-width: 11.5ch;
     text-align: center;
   }
 
-  .flow-how .steps{
-    list-style-position: inside;
-    padding-left: 0;
-    margin: 14px auto 0;
-    max-width: 34ch;
-  }
-
-  .flow-how .step-text{
-    text-align: center;
-  }
-}
-
- 
-
-  .hero{
-    padding: 34px 0 24px;
-  }
-
-  .hero-grid{
-    grid-template-columns: 1fr;
-    gap: 18px;
-    align-items: start;
-  }
-
-  .hero-copy{
-    padding-left: 0;
-    max-width: 100%;
-  }
-
-  .eyebrow{
-    margin: 0 0 10px;
-    font-size: 14px;
-  }
-
-  h1{
-    font-size: clamp(40px, 10vw, 54px);
-    line-height: .98;
-    margin: 0 0 10px;
-    max-width: 10ch;
-  }
-
-  .hero-line{
-    margin-top: 2px;
-  }
-
-  .hero-sub{
+  .hero-mobile .hero-sub{
     font-size: 17px;
-    margin: 0 0 10px;
+    margin: 0 auto 12px;
+    max-width: 28ch;
+    text-align: center;
   }
 
-  .support{
+  .hero-mobile .support{
     font-size: 14px;
-    line-height: 1.55;
-    margin: 0 0 14px;
-    max-width: 36ch;
+    line-height: 1.6;
+    margin: 0 auto 16px;
+    max-width: 34ch;
+    text-align: center;
   }
 
-  .hero-cta{
+  .mobile-cta{
     gap: 10px;
-    margin: 14px 0 0;
+    justify-content: center;
+    margin-top: 14px;
   }
 
-  .hero-cta .btn{
+  .mobile-cta .btn{
     width: 100%;
     min-width: 0;
-    padding: 13px 14px;
+    padding: 14px 16px;
     border-radius: 14px;
   }
 
-  .hero-media{
-    margin-top: 4px;
-    justify-items: center;
-    gap: 10px;
+  .mobile-media{
+    margin-top: 22px;
   }
 
-  .phone-img{
-    width: min(310px, 88%);
+  .hero-mobile .phone-img{
+    width: min(340px, 92%);
   }
 
-  .hero-caption{
+  .hero-mobile .hero-caption{
     max-width: 34ch;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 8px;
   }
 
@@ -817,26 +854,30 @@ h1{
     max-width: 100%;
   }
 
-  .flow-how h2,
+  .flow-how{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .flow-how h2{
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .flow-how .steps{
+    padding-left: 0;
+    list-style-position: inside;
+    margin: 16px auto 0;
+    max-width: 34ch;
+  }
+
+  .flow-how li{
+    text-align: left;
+  }
+
   .flow-who h2{
     font-size: 26px;
   }
-
-  .flow-how{
-  margin: 0 auto;
-  text-align: center;
-}
-
-.flow-how .steps{
-  padding-left: 0;
-  list-style-position: inside;
-  margin: 16px auto 0;
-  max-width: 34ch;
-}
-
-.flow-how li{
-  text-align: left;
-}
 
   .iphone{
     width: min(220px, 72vw);
@@ -871,31 +912,30 @@ h1{
   }
 }
 
-/* Small mobile */
 @media (max-width: 560px){
   .container{
     width: calc(100% - 24px);
   }
 
-  h1{
-    font-size: 42px;
-    max-width: 9ch;
+  .mobile-headline{
+    font-size: clamp(42px, 11vw, 54px);
+    max-width: 11ch;
   }
 
-  .hero-sub{
+  .hero-mobile .hero-sub{
     font-size: 16px;
   }
 
-  .support{
+  .hero-mobile .support{
     font-size: 14px;
-    max-width: 34ch;
+    max-width: 32ch;
   }
 
-  .phone-img{
-    width: min(290px, 90%);
+  .hero-mobile .phone-img{
+    width: min(310px, 92%);
   }
 
-  .hero-caption{
+  .hero-mobile .hero-caption{
     font-size: 12.5px;
   }
 
@@ -910,57 +950,4 @@ h1{
   .price-main{
     font-size: 24px;
   }
-}
-
-/* Hero variants */
-
-.hero-mobile{
-  display: none;
-}
-
-.hero-desktop{
-  display: block;
-}
-
-
-/* Mobile hero layout */
-
-.hero-mobile-inner{
-  text-align: center;
-  max-width: 420px;
-  margin: 0 auto;
-}
-
-.mobile-headline{
-  font-size: clamp(36px, 9vw, 48px);
-  line-height: 1.05;
-  margin-bottom: 10px;
-}
-
-.mobile-headline span{
-  display: block;
-}
-
-.mobile-cta{
-  justify-content: center;
-}
-
-.mobile-media{
-  margin-top: 18px;
-}
-
-
-/* Breakpoint switch */
-
-@media (max-width: 900px){
-
-  .hero-desktop{
-    display: none;
-  }
-
-  .hero-mobile{
-    display: block;
-    padding: 36px 0 28px;
-  }
-
 }
