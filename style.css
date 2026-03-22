@@ -753,6 +753,12 @@ h1{
   gap: 14px;
 }
 
+.hero-mobile,
+.mobile-storage-band{
+  display: none;
+}
+
+
 /* =================================
    MOBILE / TABLET OVERRIDES
 ================================= */
