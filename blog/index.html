@@ -21,50 +21,53 @@
 <body>
 
   <!-- BLOG HEADER -->
-<header class="blog-header">
-  <div class="container blog-header-inner">
-    <a class="blog-brand" href="/blog/">
-      <img class="blog-logo" src="/favicon/favicon.svg" alt="BluBin" />
-      <span>The BluBin Blog</span>
-    </a>
+  <header class="blog-header">
+    <div class="container blog-header-inner">
+      <a class="blog-brand" href="/blog/">
+        <img class="blog-logo" src="/favicon/favicon.svg" alt="BluBin" />
+        <span>The BluBin Blog</span>
+      </a>
 
-    <nav class="blog-nav" aria-label="Blog">
-      <a class="blog-link" href="/">About BluBin</a>
+      <nav class="blog-nav" aria-label="Blog">
+        <a class="blog-link" href="/">About BluBin</a>
 
-      <!-- Search toggle -->
-      <button class="search-toggle" type="button" aria-label="Search" aria-expanded="false" aria-controls="blogSearch">
-        <!-- magnifying glass icon (SVG) -->
-        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none">
-          <path d="M21 21l-4.35-4.35m1.35-5.65a7 7 0 11-14 0 7 7 0 0114 0z"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </button>
+        <!-- Search toggle -->
+        <button class="search-toggle" type="button" aria-label="Search" aria-expanded="false" aria-controls="blogSearch">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+            <path
+              d="M21 21l-4.35-4.35m1.35-5.65a7 7 0 11-14 0 7 7 0 0114 0z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
 
-      <!-- Collapsible search -->
-      <form id="blogSearch" class="blog-search-inline" action="/blog/" method="get" role="search">
-        <label class="sr-only" for="q">Search articles</label>
-        <input id="q" name="q" type="search" placeholder="Search articles" />
-      </form>
-    </nav>
-  </div>
-</header>
+        <!-- Collapsible search -->
+        <form id="blogSearch" class="blog-search-inline" action="/blog/" method="get" role="search">
+          <label class="sr-only" for="q">Search articles</label>
+          <input id="q" name="q" type="search" placeholder="Search articles" />
+        </form>
+      </nav>
+    </div>
+  </header>
 
   <main id="content">
 
-    <!-- HERO (old polish + soft glow) -->
+    <!-- HERO -->
     <section class="blog-hero">
-  <div class="container">
-    <div class="blog-hero-inner">
-      <h1 class="blog-h1">The BluBin Blog</h1>
-      <p class="blog-sub">
-        Notes from the field while building BluBin — storage systems, reseller workflows,
-        and the small fixes that save you when something sells.
-      </p>
-    </div>
-  </div>
-</section>
+      <div class="container">
+        <div class="blog-hero-inner">
+          <h1 class="blog-h1">The BluBin Blog</h1>
+          <p class="blog-sub">
+            Notes from the field while building BluBin — storage systems, reseller workflows,
+            and the small fixes that save you when something sells.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <!-- CHIPS (between hero and top row) -->
+    <!-- CHIPS -->
     <section class="blog-chips">
       <div class="container">
         <div class="chip-row" aria-label="Categories">
@@ -77,11 +80,11 @@
       </div>
     </section>
 
-    <!-- TOP ROW: FLAT ABOUT + POPPING REEL -->
+    <!-- TOP ROW -->
     <section class="blog-top">
       <div class="container blog-top-grid">
 
-        <!-- ABOUT (flat) -->
+        <!-- ABOUT -->
         <aside class="about-card" aria-label="About the author">
           <div class="about-title">About me</div>
 
@@ -89,7 +92,7 @@
             <div class="avatar" aria-hidden="true">AT</div>
             <div>
               <div class="about-name">Ashley T.</div>
-              <div class="about-role">Thrifter • Reseller • Mom </div>
+              <div class="about-role">Thrifter • Reseller • Mom</div>
             </div>
           </div>
 
@@ -101,11 +104,9 @@
           <p class="about-text">
             This blog is growing in public as BluBin grows.
           </p>
-
-          
         </aside>
 
-        <!-- REEL (popping panel) -->
+        <!-- REEL -->
         <div class="reel-col" aria-label="Start here">
           <div class="reel-head">
             <div>
@@ -113,7 +114,6 @@
               <div class="reel-subtitle">A few quick reads while the blog is still young.</div>
             </div>
 
-            <!-- mover controls -->
             <div class="reel-controls" aria-label="Reel controls">
               <button class="reel-btn" type="button" aria-label="Scroll left" data-reel-left>←</button>
               <button class="reel-btn" type="button" aria-label="Scroll right" data-reel-right>→</button>
@@ -122,45 +122,75 @@
 
           <div class="reel-row" id="reelRow" tabindex="0" aria-label="Pinned reel posts">
 
-  <a class="reel-card" href="/blog/why-blubin-was-built.html">
-  <div class="reel-thumb">
-    <img src="/blog/img/blubuilt.png" alt="Why BluBin was built" />
-  </div>
-  <div class="reel-caption">
-    <div class="reel-card-title">Why BluBin Was Built</div>
-    <div class="reel-card-meta">Reseller Life • 4 min read</div>
-  </div>
-</a>
+            <a class="reel-card" href="/blog/why-blubin-was-built.html">
+              <div class="reel-thumb">
+                <img src="/blog/img/blubuilt.png" alt="Why BluBin was built" />
+              </div>
+              <div class="reel-caption">
+                <div class="reel-card-title">Why BluBin Was Built</div>
+                <div class="reel-card-meta">Reseller Life • 4 min read</div>
+              </div>
+            </a>
 
-<a class="reel-card" href="/blog/the-quiet-cost-of-selling-online-boxes.html">
-  <div class="reel-thumb">
-    <img src="/blog/img/costbox.png" alt="Stack of shipping boxes used by online resellers" />
-  </div>
-  <div class="reel-caption">
-    <div class="reel-card-title">The Quiet Cost of Selling Online: Boxes</div>
-    <div class="reel-card-meta">Reseller Life • 4 min read</div>
-  </div>
-</a>
+            <a class="reel-card" href="/blog/the-quiet-cost-of-selling-online-boxes.html">
+              <div class="reel-thumb">
+                <img src="/blog/img/costbox.png" alt="Stack of shipping boxes used by online resellers" />
+              </div>
+              <div class="reel-caption">
+                <div class="reel-card-title">The Quiet Cost of Selling Online: Boxes</div>
+                <div class="reel-card-meta">Shipping • 2 min read</div>
+              </div>
+            </a>
 
-<a class="reel-card" href="/blog/store-reseller-inventory-home.html">
-  <div class="reel-thumb">
-    <img src="/blog/img/Checklist.png" alt="Reseller Home Checklist" />
-  </div>
-  <div class="reel-caption">
-    <div class="reel-card-title">How to Store Reseller Inventory at Home</div>
-    <div class="reel-card-meta">Reseller Life • 3 min read</div>
-  </div>
-</a>
-  
+            <a class="reel-card" href="/blog/store-reseller-inventory-home.html">
+              <div class="reel-thumb">
+                <img src="/blog/img/Checklist.png" alt="Reseller home inventory checklist" />
+              </div>
+              <div class="reel-caption">
+                <div class="reel-card-title">How to Store Reseller Inventory at Home</div>
+                <div class="reel-card-meta">Storage Ideas • 5 min read</div>
+              </div>
+            </a>
 
-            <!-- optional extra placeholder card so scroll is obvious -->
+            <a class="reel-card" href="/blog/why-you-cant-find-sold-items.html">
+              <div class="reel-thumb">
+                <img src="/blog/img/losing-inventory.png" alt="Why you can't find sold items" />
+              </div>
+              <div class="reel-caption">
+                <div class="reel-card-title">Why You Can’t Find Sold Items</div>
+                <div class="reel-card-meta">Inventory Systems • 3 min read</div>
+              </div>
+            </a>
+
+            <a class="reel-card" href="/blog/why-losing-items-keeps-happening.html">
+              <div class="reel-thumb">
+                <img src="/blog/img/lost-inventory.png" alt="Why losing items keeps happening" />
+              </div>
+              <div class="reel-caption">
+                <div class="reel-card-title">Why Losing Items Keeps Happening</div>
+                <div class="reel-card-meta">Inventory Systems • 4 min read</div>
+              </div>
+            </a>
+
+            <a class="reel-card" href="/blog/a-home-system.html">
+              <div class="reel-thumb">
+                <img src="/blog/img/home-system.png" alt="A home inventory system that actually holds up" />
+              </div>
+              <div class="reel-caption">
+                <div class="reel-card-title">A Home Inventory System That Actually Holds Up</div>
+                <div class="reel-card-meta">Inventory Systems • 4 min read</div>
+              </div>
+            </a>
+
             <div class="reel-card reel-placeholder">
-  <div class="reel-placeholder-inner">
-    <div class="placeholder-line">More</div>
-    <div class="placeholder-line">Field Notes</div>
-    <div class="placeholder-line muted">Soon</div>
-  </div>
-</div>
+              <div class="reel-placeholder-inner">
+                <div class="placeholder-line">More</div>
+                <div class="placeholder-line">Field Notes</div>
+                <div class="placeholder-line muted">Soon</div>
+              </div>
+            </div>
+
+          </div>
 
           <div class="reel-foot">
             <span class="reel-hint">Tip: use arrows or trackpad horizontal scroll</span>
@@ -175,8 +205,6 @@
       <div class="container">
         <p class="feed-kicker">Field notes from a home reseller — posted as the system grows.</p>
       </div>
-
-      
     </section>
 
     <!-- FOOTER -->
@@ -194,9 +222,9 @@
   </main>
 
   <script>
-    (function(){
+    (function () {
       const row = document.getElementById('reelRow');
-      if(!row) return;
+      if (!row) return;
 
       const leftBtn = document.querySelector('[data-reel-left]');
       const rightBtn = document.querySelector('[data-reel-right]');
@@ -209,48 +237,52 @@
       leftBtn && leftBtn.addEventListener('click', scrollLeft);
       rightBtn && rightBtn.addEventListener('click', scrollRight);
 
-      // keyboard support when reel focused
       row.addEventListener('keydown', (e) => {
-        if(e.key === 'ArrowLeft') { e.preventDefault(); scrollLeft(); }
-        if(e.key === 'ArrowRight') { e.preventDefault(); scrollRight(); }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          scrollLeft();
+        }
+        if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          scrollRight();
+        }
       });
     })();
   </script>
+
   <script>
-  (function(){
-    const nav = document.querySelector('.blog-nav');
-    const btn = document.querySelector('.search-toggle');
-    const form = document.getElementById('blogSearch');
-    const input = document.getElementById('q');
+    (function () {
+      const nav = document.querySelector('.blog-nav');
+      const btn = document.querySelector('.search-toggle');
+      const form = document.getElementById('blogSearch');
+      const input = document.getElementById('q');
 
-    if(!nav || !btn || !form || !input) return;
+      if (!nav || !btn || !form || !input) return;
 
-    function openSearch(){
-      nav.classList.add('is-search-open');
-      btn.setAttribute('aria-expanded', 'true');
-      setTimeout(() => input.focus(), 0);
-    }
+      function openSearch() {
+        nav.classList.add('is-search-open');
+        btn.setAttribute('aria-expanded', 'true');
+        setTimeout(() => input.focus(), 0);
+      }
 
-    function closeSearch(){
-      nav.classList.remove('is-search-open');
-      btn.setAttribute('aria-expanded', 'false');
-    }
+      function closeSearch() {
+        nav.classList.remove('is-search-open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
 
-    btn.addEventListener('click', () => {
-      const isOpen = nav.classList.contains('is-search-open');
-      isOpen ? closeSearch() : openSearch();
-    });
+      btn.addEventListener('click', () => {
+        const isOpen = nav.classList.contains('is-search-open');
+        isOpen ? closeSearch() : openSearch();
+      });
 
-    // Esc closes
-    document.addEventListener('keydown', (e) => {
-      if(e.key === 'Escape') closeSearch();
-    });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeSearch();
+      });
 
-    // Click outside closes (optional but nice)
-    document.addEventListener('click', (e) => {
-      if(!nav.contains(e.target)) closeSearch();
-    });
-  })();
-</script>
+      document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target)) closeSearch();
+      });
+    })();
+  </script>
 </body>
 </html>

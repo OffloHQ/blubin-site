@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>[POST TITLE]</title>
+  <meta name="description" content="[META DESCRIPTION]" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+
+  <!-- Shared site styles + blog-only overrides -->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/blog/blog.css" />
+</head>
+
+<body class="post-page">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- BLOG HEADER -->
+  <header class="blog-header">
+    <div class="container blog-header-inner">
+      <a class="blog-brand" href="/blog/">
+        <img class="blog-logo" src="/favicon/favicon.svg" alt="BluBin" />
+        <span>The BluBin Blog</span>
+      </a>
+
+      <nav class="blog-nav" aria-label="Blog">
+        <a class="blog-link" href="/">About BluBin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="container post-body">
+      <a class="post-back" href="/blog/">← Back to the blog</a>
+
+      <div class="post-meta-row">
+        <span class="post-cat">[CATEGORY]</span>
+        <span class="dot">•</span>
+        <span>[X min read]</span>
+      </div>
+
+      <h1 class="post-h1">[POST TITLE]</h1>
+
+      <p class="post-lead">
+        [SHORT LEAD PARAGRAPH]
+      </p>
+
+      <div class="post-author">
+        Written by <strong>Ashley Torres</strong> — Reseller and builder of BluBin
+      </div>
+
+      <hr class="post-rule" />
+
+      <!-- ARTICLE START -->
+
+      <p><strong>[OPENING LINE]</strong></p>
+
+      <p>
+        [Paragraph]
+      </p>
+
+      <p>
+        [Paragraph]
+      </p>
+
+      <p>
+        [Paragraph]
+      </p>
+
+      <hr class="post-rule" />
+
+      <h2 class="post-h2">[Section Heading]</h2>
+
+      <p>
+        [Paragraph]
+      </p>
+
+      <p>
+        [Paragraph]
+      </p>
+
+      <p>
+        [Paragraph]
+      </p>
+
+      <hr class="post-rule" />
+
+      <h3 class="post-h3">[Subheading]</h3>
+
+      <p>
+        [Paragraph]
+      </p>
+
+      <p>
+        [Paragraph]
+      </p>
+
+      <p>
+        [Paragraph]
+      </p>
+
+      <hr class="post-rule" />
+
+      <p><strong>[Closing line]</strong></p>
+
+      <!-- ARTICLE END -->
+    </section>
+
+    <section class="reader-comments container">
+      <h3>Got thoughts?</h3>
+
+      <p>
+        If you're a reseller and have thoughts on this, I’d love to hear about it.
+      </p>
+
+      <p>
+        Send me a note here:
+      </p>
+
+      <p class="comment-email">
+        <a href="mailto:hello@blubin.app">
+          hello@blubin.app
+        </a>
+      </p>
+    </section>
+
+    <footer class="blog-footer">
+      <div class="container blog-footer-inner">
+        <div class="muted">© 2026 Barder Works</div>
+        <div class="footer-links">
+          <a href="/blog/">Blog</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
